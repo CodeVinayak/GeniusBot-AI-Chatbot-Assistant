@@ -65,7 +65,7 @@ def get_response(user_query, chat_history):
 
 # session state
 if "chat_history" not in st.session_state:
-    st.session_state.chat_history = [AIMessage(content="Hello, I am a bot. How can I help you?")]
+    st.session_state.chat_history = [AIMessage(content="Hello, I am a bot. Developed by Vinayak Singh using OpenAI's ChatGPT API and Streamlit. How can I help you?")]
 
 # conversation
 for message in st.session_state.chat_history:
