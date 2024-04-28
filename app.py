@@ -18,7 +18,7 @@ def extract_text_from_pdf(file):
 
 # app config (moved to the top)
 st.set_page_config(page_title="Streamlit Chatbot", page_icon="🤖")
-st.title("AI Chatbot")
+st.title("GeniusBot: AI-Powered Assistance with PDF Insight")
 
 # File uploader
 pdf_file = st.file_uploader(label="Upload PDF", type=["pdf"], key="pdf_uploader", help="You can upload a PDF to ask questions based on it.", label_visibility="hidden")
@@ -65,7 +65,7 @@ def get_response(user_query, chat_history):
 
 # session state
 if "chat_history" not in st.session_state:
-    st.session_state.chat_history = [AIMessage(content="Hello, I am a bot. Developed by Vinayak Singh using OpenAI's ChatGPT API and Streamlit. How can I help you?")]
+    st.session_state.chat_history = [AIMessage(content="Hello, I am a GeniusBot: AI-Powered Assistance with PDF Insight. Developed by Vinayak Singh using gpt-3.5-turbo and Streamlit. How can I help you?")]
 
 # conversation
 for message in st.session_state.chat_history:
